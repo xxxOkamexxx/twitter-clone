@@ -1,7 +1,7 @@
 import React from 'react'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SidebarOption from './SidebarOption';
-
+// Icons
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
@@ -10,6 +10,8 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+// Button
+import { Button } from '@mui/material';
 
 function Sidebar() {
   return (
@@ -26,7 +28,9 @@ function Sidebar() {
         <SidebarOption text="リスト" Icon={ListAltIcon}/>
         <SidebarOption text="プロフィール" Icon={PermIdentityIcon}/>
         <SidebarOption text="もっと見る" Icon={MoreHorizIcon}/>
+        
         {/* Button */}
+        <Button variant='outlined' className='sidebar__tweet'>ツイートする</Button>
     </div>
   )
 }
